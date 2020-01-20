@@ -1,15 +1,14 @@
 ![logo](/picturename.jpg)
 
-# PHaDA: Protein Homology and Domain Analisys
+# PHaDA: Protein Homology and Domain Analysis
 
 Release 1.0 | Created by: Daniel Carrillo Martín
 
 ## What's PHaDA?
 
-PHaDA is a bash bioinformatic tool for protein homology
-and domain analisys. What does this mean? Homology analisys
-include 
-
+PHaDA is a bash bioinformatic tool for protein homology and domain analysis. What does this mean? Homology analysis
+includes the performing of a **blastp**, a multiple alignment of each query and its blastp hits sequences with **Muscle** and a neighbor-joining
+phylogenetic tree from the previous alignment (Also with **Muscle**). The domain analysis part carries out a PROSITE's domains pattern search in the sequences of each query and its blastp hits. It shows the recognised domains and some information about them in each protein. 
 
 ## Requirements
 
@@ -23,18 +22,19 @@ include
 
 ## Usage 
 
-PHaDA is 
+PHaDA is structured in packages. There are multiple packages for each part of the analysis like `blaster.py`,`muscler.py`,etc.
+For running PHaDA, it is necessary that all packages are in the same folder or directory. The code for running PHaDA is:
 
 `python main.py query.fasta subject.fasta`
 
+PHaDA creates its own directory for each run. The directory is created at the actual working directory. 
+
 ## Output
 
-PHaDA creates a **Results/** directory for each execution.
-RESULTS CONTIENE OTRO DIRECTORIO QUE AUNA TODOS LOS RESULTADOS PARA CADA *QUERY* 
-QUE HA OBTENIDO AL MENOS UN *HIT* EN EL BLASTP. CADA UNO DE ESTOS DIRECTORIOSM ASU VEZ
-CONTIENE:
-- Blastresult_QUERY.fasta : 
-- QUERY_alignment.fasta :
-- QUERY_tree.phy :
-- QUERY_domains.tsv :
-- SUBJECT_domains.tsv :
+PHaDA creates a `Results/` directory for each run. This directory contains another directory for each query from the query.fasta that got at least one hit in **blastp**. These query-named directories, in turn, contain the following files:
+
+- Blastresult_QUERY.fasta : fasta file for the query and blast hits sequences.
+- QUERY_alignment.fasta : query and blast hits sequences alignment in fasta format.
+- QUERY_tree.phy : NeighborJoining tree of the query and blast hits in Newick format.
+- QUERY_domains.tsv : Domains recognised in the query protein.
+- SUBJECTX_domains.tsv : Domains recognised in the subject protein X.
