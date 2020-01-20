@@ -35,5 +35,5 @@ PHaDA creates a `Results/` directory for each run. This directory contains anoth
 - Blastresult_QUERY.fasta : fasta file for the query and blast hits sequences.
 - QUERY_alignment.fasta : query and blast hits sequences alignment in fasta format.
 - QUERY_tree.phy : NeighborJoining tree of the query and blast hits in Newick format.
-- QUERY_domains.tsv : Domains recognised in the query protein.
-- SUBJECTX_domains.tsv : Domains recognised in the subject protein X.
+- QUERY_domains.csv : Domains recognised in the query protein.
+- SUBJECTX_domains.csv : Domains recognised in the subject protein X.
