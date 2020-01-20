@@ -1,1 +1,3 @@
 # PHaDA
+
+![logo](/picturename)
