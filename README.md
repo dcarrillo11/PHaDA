@@ -25,7 +25,7 @@ phylogenetic tree from the previous alignment (Also with **Muscle**). The domain
 PHaDA is structured in packages. There are multiple packages for each part of the analysis like `blaster.py`,`muscler.py`,etc.
 For running PHaDA, it is necessary that all packages are in the same folder or directory. The code for running PHaDA is:
 
-`python main.py query.fasta subject.fasta`
+`python3 main.py query.fasta subject.fasta`
 
 `main.py` takes two arguments: the query fasta file and the subject fasta file. Both arguments are mandatory.
 
