@@ -27,6 +27,8 @@ For running PHaDA, it is necessary that all packages are in the same folder or d
 
 `python main.py query.fasta subject.fasta`
 
+`main.py` takes two arguments: the query fasta file and the subject fasta file. Both arguments are mandatory.
+
 PHaDA creates its own directory for each run. The directory is created at the actual working directory. 
 
 ## Output
