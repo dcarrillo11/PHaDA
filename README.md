@@ -24,7 +24,7 @@ PHaDA is structured in packages. There are multiple packages for each part of th
 
 `python3 main.py query.fasta subject.fasta`
 
-`main.py` takes two arguments: the query fasta file and the subject fasta file. Both arguments are mandatory. For proper running, as well as the PROSITE files, these fasta need to be in the same folder.
+`main.py` takes two arguments: the query fasta file and the subject fasta file. Both arguments are mandatory.
 
 PHaDA creates its own directory for each run at the actual working directory. 
 
