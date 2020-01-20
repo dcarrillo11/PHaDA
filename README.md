@@ -1,3 +1,3 @@
-# PHaDA
+![logo](/picturename.jpg)
 
-![logo](/picturename)
+# PHaDA: Protein Homology and Domain Analisys
