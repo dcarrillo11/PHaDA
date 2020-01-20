@@ -6,9 +6,7 @@ Release 1.0 | Created by: Daniel Carrillo Martín
 
 ## What's PHaDA?
 
-PHaDA is a bash bioinformatic tool for protein homology and domain analysis. What does this mean? Homology analysis
-includes the performing of a **blastp**, a multiple alignment of each query and its blastp hits sequences with **Muscle** and a neighbor-joining
-phylogenetic tree from the previous alignment (Also with **Muscle**). The domain analysis part carries out a PROSITE's domains pattern search in the sequences of each query and its blastp hits. It shows the recognised domains and some information about them in each protein. 
+PHaDA is a bash bioinformatic tool for protein homology and domain analysis. What does this mean? Homology analysis includes the performing of a **blastp**, a multiple alignment of each query and its blastp hits sequences with **Muscle** and a neighbor-joining phylogenetic tree from the previous alignment (Also with **Muscle**). The domain analysis part carries out a PROSITE's domains pattern search in the sequences of each query and its blastp hits. It shows the recognised domains and some information about them in each protein. 
 
 ## Requirements
 
@@ -22,8 +20,7 @@ phylogenetic tree from the previous alignment (Also with **Muscle**). The domain
 
 ## Usage 
 
-PHaDA is structured in packages. There are multiple packages for each part of the analysis like `blaster.py`,`muscler.py`,etc.
-For running PHaDA, it is necessary that all packages are in the same folder or directory. The code for running PHaDA is:
+PHaDA is structured in packages. There are multiple packages for each part of the analysis like `blaster.py`,`muscler.py`,etc. For running PHaDA, it is necessary that all packages are in the same folder or directory. The PROSITE files: `Prosite.dat` and `Prosite.doc` also need to be in that folder (They are included in the repository). The code for running PHaDA is:
 
 `python3 main.py query.fasta subject.fasta`
 
