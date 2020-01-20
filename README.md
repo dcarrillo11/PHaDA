@@ -20,7 +20,7 @@ PHaDA is a bash bioinformatic tool for protein homology and domain analysis. Wha
 
 ## Usage 
 
-PHaDA is structured in packages. There are multiple packages for each part of the analysis like `blaster.py`,`muscler.py`,etc. For running PHaDA, it is necessary that all packages are in the same folder or directory. The PROSITE files: `Prosite.dat` and `Prosite.doc` also need to be in that folder (Prosite.doc is uploaded in this repository, prosite.dat can be downloaded from [here](ftp://ftp.expasy.org/databases/prosite)). The code for running PHaDA is:
+PHaDA is structured in packages. There are multiple packages for each part of the analysis like `blaster.py`,`muscler.py`,etc. For running PHaDA, it is necessary that all packages are in the same folder or directory. The PROSITE files: `prosite.dat` and `prosite.doc` also need to be in that folder (`prosite.doc` is uploaded in this repository, `prosite.dat` can be downloaded from [here](ftp://ftp.expasy.org/databases/prosite) ). The code for running PHaDA is:
 
 `python3 main.py query.fasta subject.fasta`
 
