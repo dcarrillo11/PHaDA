@@ -26,7 +26,7 @@ PHaDA is structured in packages. There are multiple packages for each part of th
 
 `main.py` takes two arguments: the query fasta file and the subject fasta file. Both arguments are mandatory.
 
-PHaDA creates its own directory for each run. The directory is created at the actual working directory. 
+PHaDA creates its own directory for each run at the actual working directory. 
 
 ## Output
 
